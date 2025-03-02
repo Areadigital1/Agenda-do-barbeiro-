@@ -1,0 +1,84 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    color: red;
+    cursor: pointer;
+}
+
+/* New styles for schedule table */
+#scheduleTable {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#scheduleTable th, #scheduleTable td {
+    padding: 0.3rem;
+    vertical-align: middle;
+}
+
+.schedule-slot {
+    background-color: #d4edda;
+    color: #155724;
+    transition: all 0.3s ease;
+}
+
+.schedule-slot-booked {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 0.7rem;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#scheduleTable {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    #scheduleTable {
+        font-size: 0.7rem;
+    }
+}
+
+#notificationArea {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    max-width: 300px;
+}
+
+.clients-section {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#messagesList {
+    display: none;
+}
